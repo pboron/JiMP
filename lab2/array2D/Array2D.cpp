@@ -4,6 +4,8 @@
 
 #include "Array2D.h"
 
+using namespace std;
+
 int **Array2D(int n_rows, int n_columns)
 {
 
