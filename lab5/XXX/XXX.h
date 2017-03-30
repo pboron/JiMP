@@ -30,6 +30,8 @@ public:
     XXX &operator=(XXX &&xxx);
     //5. Destruktor
     ~XXX();
+private:
+    char *name_;
 };
 
 
