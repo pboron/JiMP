@@ -6,6 +6,10 @@
 #include <cmath>
 #include "XXX.h"
 
+XXX::XXX() : name_{new char[1024]} {
+
+}
+
 XXX::~XXX() {
     delete [] name_;
 }
