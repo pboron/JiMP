@@ -2,30 +2,27 @@
 // Created by Rambo on 2017-05-08.
 //
 
-#ifndef EXERCISES_MICRODVDSUBTITLES_H
-#define EXERCISES_MICRODVDSUBTITLES_H
-
-#ifndef JIMP_EXERCISES_MICRODVDSUBTITLES_H
-#define JIMP_EXERCISES_MICRODVDSUBTITLES_H
+#ifndef EXERCISES_MOVIESUBTITLES_H
+#define EXERCISES_MOVIESUBTITLES_H
 
 #include <sstream>
 #include <regex>
 #include <stdexcept>
 
-namespace subtitles{
+namespace moviesubs{
     class MovieSubtitles{
     public:
-        virtual void ShiftSubtitlesBy(std::stringstream*, std::stringstream*, int, int)=0;
+        virtual void ShiftAllSubtitlesBy(int, int, std::stringstream*, std::stringstream*)=0;
     };
 
-    class MicroDVDSubtitles: public MovieSubtitles{
+    class MicroDvdSubtitles: public MovieSubtitles{
     public:
-        void ShiftSubtitlesBy(std::stringstream*, std::stringstream*, int, int);
+        void ShiftAllSubtitlesBy(int, int, std::stringstream*, std::stringstream*);
     };
 
     class SubRipSubtitles: public MovieSubtitles{
     public:
-        void ShiftSubtitlesBy(std::stringstream*, std::stringstream*, int, int);
+        void ShiftAllSubtitlesBy(int, int, std::stringstream*, std::stringstream*);
     private:
         bool ValidateTimes(std::smatch);
     };
@@ -66,4 +63,4 @@ namespace subtitles{
 
 }
 
-#endif //EXERCISES_MICRODVDSUBTITLES_H
+#endif //EXERCISES_MOVIESUBTITLES_H
