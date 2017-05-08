@@ -36,7 +36,7 @@ namespace geometry{
 
         if (o1 == o2 && o2 == o3 && o3 == o4) {
             s1.Circumference = 4 * o1;
-            s1.Area = (int) o1^2;
+            s1.Area = (double) o1^2;
         }
         return s1;
     }

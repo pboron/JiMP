@@ -36,8 +36,7 @@ class DummySerializer : public Serializer {
   void SerializableField(const std::string &field_name, const academia::Serializable &value) override {
     serializable_field_called++;
   }
-  void ArrayField(const std::string &field_name,
-                  const vector<reference_wrapper<const academia::Serializable>> &value) override {
+  void ArrayField(const std::string &field_name, const vector<reference_wrapper<const academia::Serializable>> &value) override {
     array_field_called++;
   }
   void Header(const std::string &object_name) override {
