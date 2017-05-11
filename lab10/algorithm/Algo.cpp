@@ -22,7 +22,7 @@ namespace algo{
     }
     std::vector<std::string> MapToString(const std::vector<double> &v){
         std::vector<std::string> s;
-        std::move(v.begin(), v.end(), s.begin());
+        std::move(v.begin(), v.end(), std::back_inserter(s));
         return s;
     }
 }
