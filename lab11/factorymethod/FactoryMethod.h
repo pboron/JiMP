@@ -11,14 +11,14 @@ namespace factoryMethod{
 
     class MyType{
     public:
-        std::string SayHello{
+        std::string SayHello() const {
              return "hello";
-        };
+        }
     };
 
     template<class T>
     T Create() {
-        return new T;
+        return T();
     };
 }
 
