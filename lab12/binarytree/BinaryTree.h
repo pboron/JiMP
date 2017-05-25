@@ -1,0 +1,8 @@
+//
+// Created by Student on 25.05.2017.
+//
+
+#ifndef JIMP_EXERCISES_BINARYTREE_H
+#define JIMP_EXERCISES_BINARYTREE_H
+
+#endif //JIMP_EXERCISES_BINARYTREE_H

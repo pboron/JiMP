@@ -1,0 +1,5 @@
+project(lab12)
+
+add_subdirectory_if_exists(binarytree)
+add_subdirectory_if_exists(timerecorder)
+add_subdirectory_if_exists(unorderedmap)
