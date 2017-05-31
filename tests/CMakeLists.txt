@@ -79,7 +79,8 @@ add_subdirectory(lab7test)
 add_subdirectory(lab8test)
 add_subdirectory(lab9test)
 add_subdirectory(lab10test)
-
+add_subdirectory(lab11test)
+add_subdirectory(lab12test)
 
 
 
