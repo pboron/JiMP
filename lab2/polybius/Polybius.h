@@ -1,0 +1,8 @@
+//
+// Created by Rambo on 2017-05-31.
+//
+
+#ifndef JIMP_EXERCISES_POLYBIUS_H
+#define JIMP_EXERCISES_POLYBIUS_H
+
+#endif //JIMP_EXERCISES_POLYBIUS_H
