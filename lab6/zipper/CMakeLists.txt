@@ -1,8 +1,8 @@
 
 project(zipperiterator)
 
-set(HEDEAR_FILES ZipperIterator.h)
-set(SOURCE_FILES ZipperIterator.cpp)
+set(HEDEAR_FILES Zipper.h Iterator.h)
+set(SOURCE_FILES Zipper.cpp Iterator.cpp)
 
 add_library(libzipperiterator STATIC ${SOURCE_FILES})
 target_include_directories(libzipperiterator PUBLIC .)
